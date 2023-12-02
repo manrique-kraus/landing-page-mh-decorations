@@ -1,5 +1,13 @@
+:root {
+    --color-blue: #39B5E0;
+    --color-pink: #FF78F0;
+    --color-purple: #A31ACB;
+    --color-yellow: #F5EA5A;
+}
+
 html {
     font-size: 62.5%;
+    font-family: 'Comic Neue', cursive;
 }
 
 body {
@@ -13,9 +21,14 @@ body {
     grid-template-columns: 1fr;
 }
 
+main {
+    background: url(../images/fundo-roxo.jpg);
+    background-size: cover;
+    height: 96vh;
+}
+
 .header {
     grid-area: header;
-
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -30,34 +43,41 @@ body {
 .header .logo a {
     display: flex;
     align-items: center;
+    padding: 1.5rem;
 }
 
 .header h3 {
+    font-family: 'Kalam', cursive;
     padding: 2rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
     transition: 0.3s;
 }
 
 .header a:hover h3 {
-    color: beige;
+    color: var(--color-pink);
 }
+
 
 .header nav ul {
     display: flex;
-    background-color: aliceblue;
-    margin-right: 3rem;
-    padding: 2rem 2rem;
 }
 
+
 .header nav ul li a {
-    font-size: 2rem;
-    padding: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 2rem 3rem;
     transition: 0.3s;
 }
 
 .header nav ul li a:hover {
-    color: yellowgreen;
-    background-color: pink;
+    color: #000000;
+    background-color:var(--color-blue);
     border-radius: 1rem;
 
 }
+
+.hero {
+    grid-area: hero;
+}
+
