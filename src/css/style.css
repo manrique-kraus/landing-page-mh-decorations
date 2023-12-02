@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "hero hero hero"
+                         "about about about"
+                         "contact contact contact"
+                         "footer footer footer"
+    ;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.header .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header h3 {
+    padding: 2rem;
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+.header a:hover h3 {
+    color: beige;
+}
+
+.header nav ul {
+    display: flex;
+    background-color: aliceblue;
+    margin-right: 3rem;
+    padding: 2rem 2rem;
+}
+
+.header nav ul li a {
+    font-size: 2rem;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: yellowgreen;
+    background-color: pink;
+    border-radius: 1rem;
+
+}
