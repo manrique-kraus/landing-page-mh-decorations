@@ -131,3 +131,97 @@ main {
     box-shadow: 2px 9px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
+.about {
+    grid-area: about;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.about .content-about {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+    width: 28rem;
+    height: 5rem;
+    font-size: 3.5rem;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5rem;
+}
+
+.about p {
+    background-color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2.5rem;
+    width: 100rem;
+    height: 30rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 80px 2px 80px 2px;
+}
+
+.about .emoji {
+    width: 9rem;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.about .emoji.one {
+    top: 0;
+    left: 7rem;
+    transform: rotateZ(40deg);
+}
+
+.about .emoji.one:hover {
+    transform: rotateZ(0);
+}
+
+.about .emoji.two {
+    top: 0;
+    right: 5rem;
+    transform: rotateZ(-40deg);
+}
+
+.about .emoji.two:hover {
+    transform: rotateZ(0deg);
+}
+
+.about .emoji.three {
+    width: 5.5rem;
+    bottom: 4px;
+    left: 19rem;
+}
+
+.about .emoji.four {
+    width: 5.5rem;
+    bottom: 4px;
+    left: 19rem;
+}
+
+.about .emoji.five {
+    width: 5.5rem;
+    bottom: 5rem;
+    left: 19rem;
+    transform: translateX(4rem);
+}
+
+/* arrumar */
+
+.about .emoji.four:hover {
+    transform: translateX(5rem);
+}
+
+.about .emoji.five:hover {
+    transform: translateX(0);
+}
