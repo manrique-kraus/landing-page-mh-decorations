@@ -8,6 +8,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Comic Neue', cursive;
+    color: #ffffff;
 }
 
 body {
@@ -47,9 +48,8 @@ main {
 }
 
 .header h3 {
-    font-family: 'Kalam', cursive;
     padding: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     transition: 0.3s;
 }
 
@@ -79,5 +79,55 @@ main {
 
 .hero {
     grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+}
+
+.hero .infos {
+    margin-left: 5rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-family: 'Kalam', cursive;
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.hero .infos .btn {
+    margin-top: 6rem;
+    width: 25rem;
+    height: 7rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--color-yellow);
+    font-size: 2rem;
+    color: #000000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: var(--color-yellow);
+    width: 27rem;
+    height: 8rem;
+}
+
+.hero .image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero  img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: solid 3px white;
+    box-shadow: 2px 9px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
