@@ -16,6 +16,7 @@ body {
     grid-template-areas: "header header header"
                          "hero hero hero"
                          "about about about"
+                         "decorations decorations decorations"
                          "contact contact contact"
                          "footer footer footer"
     ;
@@ -165,7 +166,7 @@ main {
     margin-top: 2rem;
     padding: 2.5rem;
     width: 100rem;
-    height: 30rem;
+    height: 35rem;
     font-size: 2rem;
     text-align: center;
     border-radius: 80px 2px 80px 2px;
@@ -197,31 +198,57 @@ main {
     transform: rotateZ(0deg);
 }
 
-.about .emoji.three {
-    width: 5.5rem;
-    bottom: 4px;
-    left: 19rem;
+.about .interaction {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    width: 10rem;
+    height: 22rem;
+    right: 2.5rem;
+    bottom: 0;
 }
 
 .about .emoji.four {
-    width: 5.5rem;
-    bottom: 4px;
-    left: 19rem;
+    display: none;
 }
 
 .about .emoji.five {
-    width: 5.5rem;
-    bottom: 5rem;
-    left: 19rem;
-    transform: translateX(4rem);
+    width: 8rem;
+    top: 1rem;
+    left: 6px;
 }
 
-/* arrumar */
-
-.about .emoji.four:hover {
-    transform: translateX(5rem);
+.about .interaction:hover .emoji.three {
+    display: none;
 }
 
-.about .emoji.five:hover {
-    transform: translateX(0);
+.about .interaction:hover .emoji.four {
+    display: block;
+}
+
+.about .interaction:hover .emoji.five {
+    transform: translateY(-3rem);
+}
+
+.decorations {
+    grid-area: decorations;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 13rem;
+    position: relative;
+ 
+}
+
+.decorations .product {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 35rem;
+    margin: 2rem;
+    border: solid 1px black;
+}
+
+.decorations .product h4 {
+    background-color: red;
 }
