@@ -218,6 +218,11 @@ main {
     left: 6px;
 }
 
+.about .emoji.six {
+    bottom: 0;
+    left: 4rem;
+}
+
 .about .interaction:hover .emoji.three {
     display: none;
 }
@@ -230,6 +235,10 @@ main {
     transform: translateY(-3rem);
 }
 
+.about .emoji.six:hover {
+    transform: rotateZ(-90deg);
+}
+
 .decorations {
     grid-area: decorations;
     display: grid;
@@ -237,18 +246,55 @@ main {
     grid-template-rows: 1fr 1fr;
     margin-top: 13rem;
     position: relative;
- 
+}
+
+.decorations h2 {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .decorations .product {
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
     height: 35rem;
     margin: 2rem;
-    border: solid 1px black;
+    box-shadow: 0 8px 25px 8px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.decorations .product h4 {
+.decorations img {
+    width: 23rem;
+}
+.decorations .product .title {
+    font-size: 2.3rem;
+    width: 98%;
+    text-align: center;
+}
+
+.decorations .product .title.one {
     background-color: red;
 }
+
+.decorations .product .title.two {
+    background-color: #000000;
+}
+
+.decorations .product .title.three {
+    background-color: green;
+}
+
+.decorations .product .title.four {
+    background-color: brown;
+}
+
+.decorations .product:hover {
+    transform: scale(1.04);
+}
+
+
