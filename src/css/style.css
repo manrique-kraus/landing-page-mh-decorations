@@ -100,7 +100,7 @@ main {
     margin-top: 3rem;
 }
 
-.hero .infos .btn {
+.hero .infos .btn  {
     margin-top: 6rem;
     width: 25rem;
     height: 7rem;
@@ -110,7 +110,7 @@ main {
     font-size: 2rem;
     color: #000000;
     transition: 0.3s;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .hero .btn:hover {
@@ -255,6 +255,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 40rem;
+    font-size: 3.7rem;
 }
 
 .decorations .products {
@@ -386,11 +387,72 @@ main {
     font-weight: 500;
 }
 
+.contact .content-contact .infos .btns .fa-brands {
+    font-size: 1.5rem;
+}
+
 .contact .content-contact .infos .btn-contact.wpp {
     background-color: #25D366;
 }
 
 .contact .content-contact .infos .btn-contact.insta {
     background-color: #FFFFFFFF ;
+}
+
+.contact .content-contact .infos .btn-contact:hover {
+    transition: 0.4s;
+    width: 16rem;
+    height: 6rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--color-purple);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 4rem;
+    transition: 0.3s;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer nav ul {
+    display: flex;
+    padding: 1rem;
+}
+
+.footer nav ul li a {
+    font-size: 3rem;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.footer .icons a {
+    font-size: 3rem;
+    padding: 1.7rem;
+    transition: 0.3s;
+}
+
+.footer .copy h4 {
+    font-size: 2rem;
+    width: 98vw;
+}
+
+.footer a h2:hover,
+.footer nav ul li a:hover,
+.footer .icons a:hover
+ {
+    color: var(--color-blue)
 }
 

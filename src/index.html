@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/src/css/menu.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/font-awesome.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +44,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aspernatur voluptatem quisquam eos
                     exercitationem inventore expedita labore id sequi nihil. Rerum consequatur mollitia hic ratione
                     officiis at nihil voluptatibus iure!</p>
-                <button class="btn" href="#contact">Entrar em Contato</button>
+                <a href="#contact"><button class="btn">Entrar em Contato</button></a>
             </div>
 
             <div class="image-hero">
@@ -54,7 +53,7 @@
         </section>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="content-about">
             <h3 class="title about">Sobre</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum amet accusantium sed fugit ipsam odio
@@ -73,7 +72,7 @@
         </div>
     </section>
 
-    <section class="decorations">
+    <section class="decorations" id="decorations">
 
         <div class="title decoration">
             <h2>Decoraçoes</h2>
@@ -102,7 +101,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
 
         <h2 class="title contact">CONTATO</h2>
 
@@ -118,14 +117,41 @@
                     Culpa ut doloremque consequuntur velit praesentium facilis, deserunt dolorum recusandae sapiente
                     magnam, commodi neque vel hic.</p>
                 <div class="btns">
-                    <button class="btn-contact wpp" href="#">WHATSAPP</button>
-                    <button class="btn-contact insta" href="#">INSTAGRAM</button>
+                    <button class="btn-contact wpp" href="#"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</button>
+                    <button class="btn-contact insta" href="#"><i class="fa-brands fa-instagram"></i> INSTAGRAM</button>
+
                 </div>
             </div>
         </div>
 
     </section>
-    <footer class="footer"></footer>
+
+    <footer class="footer">
+
+        <a href="">
+            <h2>MH Decorações</h2>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#decorations">Decorações</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i> </a>
+        </div>
+
+        <div class="copy">
+            <h4>© 2023 MH Decorações</h4>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2f44bb86e9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
